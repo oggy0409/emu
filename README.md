@@ -1,4 +1,4 @@
-// [HEADER-MODULE-4.5] PLUGIN WORDPRESS TÍCH HỢP EMULATORJS CHƠI GAME RETRO TRÊN TRÌNH DUYỆT
+# [HEADER-MODULE-4.5] PLUGIN WORDPRESS TÍCH HỢP EMULATORJS CHƠI GAME RETRO TRÊN TRÌNH DUYỆT
 
 ## 🎯 Mục tiêu:
 Tạo 1 plugin WordPress cho phép người dùng chơi game retro trực tiếp trên trình duyệt thông qua thư viện EmulatorJS. Tích hợp sâu vào hệ thống WordPress, thân thiện frontend và có thể mở rộng module.
@@ -95,7 +95,7 @@ add_shortcode('ejs_game', 'ejs_shortcode_game');
 - Cần viết chuẩn module hóa, chia từng phần như CPT, template, settings.
 - Tối ưu để có thể mở rộng cloud save, achievements, profile, embed...
 
-// [HEADER-MODULE-4.6] TỐI ƯU SEO CHO CÁC TRANG FRONTEND TRONG PLUGIN
+# [HEADER-MODULE-4.6] TỐI ƯU SEO CHO CÁC TRANG FRONTEND TRONG PLUGIN
 
 ## 🎯 Mục tiêu:
 Cải thiện khả năng index của công cụ tìm kiếm, tăng organic traffic cho plugin thông qua việc tối ưu SEO on-page cho tất cả các trang frontend liên quan đến game, profile, hệ máy và thể loại.
@@ -203,7 +203,7 @@ Cải thiện khả năng index của công cụ tìm kiếm, tăng organic traf
 - Tích hợp tốt với plugin Yoast, RankMath
 - Hỗ trợ cả structured data và layout chuẩn SEO mobile
 
-// [HEADER-MODULE-4.7] TỐI ƯU HOÁ HIỆU SUẤT FRONTEND & HỖ TRỢ ĐA THIẾT BỊ
+# [HEADER-MODULE-4.7] TỐI ƯU HOÁ HIỆU SUẤT FRONTEND & HỖ TRỢ ĐA THIẾT BỊ
 
 ## 🎯 Mục tiêu:
 Tối ưu trải nghiệm người dùng với kỹ thuật bộ nhớ đệm (caching), lazy loading, hiệu ứng tải dạng skeleton. Đồng thời đảm bảo layout giao diện của plugin tương thích đa thiết bị (responsive: PC, tablet, mobile).
@@ -288,7 +288,7 @@ document.querySelector('.mobile-menu-btn').addEventListener('click', toggleMenu)
 - Cảm giác UX tốt hơn nhờ skeleton loader
 - Plugin trở nên chuyên nghiệp, đa nền tảng, dùng mượt trên mọi thiết bị
 
-// [HEADER-MODULE-4.8] THANH TÌM KIẾM GAME NÂNG CAO (AJAX + AUTOCOMPLETE + THUMBNAIL)
+# [HEADER-MODULE-4.8] THANH TÌM KIẾM GAME NÂNG CAO (AJAX + AUTOCOMPLETE + THUMBNAIL)
 
 ## 🎯 Mục tiêu:
 Tối ưu hóa trải nghiệm tìm kiếm game bằng thanh search bar hiện đại: hỗ trợ gợi ý tự động (autocomplete), suggest game tương tự, hiển thị thumbnail kèm tiêu đề theo thời gian thực (AJAX).
@@ -375,7 +375,7 @@ ALTER TABLE wp_ejs_games ADD FULLTEXT(title, description);
 - Giảm tỷ lệ thoát trang khi không tìm được game
 - Tối ưu tốc độ truy xuất nhờ AJAX + cache + fulltext logic thông minh
 
-// [HEADER-MODULE-4.9] KẾT NỐI PLUGIN VỚI DISCORD & TWITCH – CỘNG ĐỒNG REALTIME
+# [HEADER-MODULE-4.9] KẾT NỐI PLUGIN VỚI DISCORD & TWITCH – CỘNG ĐỒNG REALTIME
 
 ## 🎯 Mục tiêu:
 Tăng tính cộng đồng và trải nghiệm chia sẻ game bằng cách tích hợp plugin với nền tảng Discord và Twitch. Giúp người chơi kết nối, chia sẻ highlight, và tham gia cộng đồng yêu thích retro game.
@@ -452,7 +452,7 @@ function send_discord_webhook($message) {
 - Tạo động lực chia sẻ, tạo nội dung, và livestream trải nghiệm chơi game.
 - Tăng sự gắn bó, gợi mở phát triển cộng đồng riêng cho plugin/platform.
 
-// [HEADER-MODULE-5.0] TRANG GỬI PHẢN HỒI & BÁO LỖI NGƯỜI DÙNG
+# [HEADER-MODULE-5.0] TRANG GỬI PHẢN HỒI & BÁO LỖI NGƯỜI DÙNG
 
 ## 🎯 Mục tiêu:
 Tạo một module cho phép người dùng gửi phản hồi, góp ý, hoặc báo lỗi gặp phải khi sử dụng plugin hoặc chơi game. Đây là kênh quan trọng để cải thiện chất lượng hệ thống.
@@ -532,7 +532,7 @@ wp_mail(get_option('admin_email'), 'Phản hồi mới từ người dùng', $me
 - Góp phần cải tiến liên tục chất lượng plugin và tính năng.
 - Dễ mở rộng, tích hợp tốt với hệ thống hiện tại.
 
-// [HEADER-MODULE-5.1] HỆ THỐNG THÔNG BÁO NGƯỜI DÙNG (USER NOTIFICATIONS)
+# [HEADER-MODULE-5.1] HỆ THỐNG THÔNG BÁO NGƯỜI DÙNG (USER NOTIFICATIONS)
 
 ## 🎯 Mục tiêu:
 Thiết lập hệ thống thông báo thời gian thực hoặc định kỳ nhằm giữ chân người dùng, giúp họ không bỏ lỡ các hoạt động quan trọng như game mới, sự kiện, bình luận, tag tên...
@@ -613,7 +613,7 @@ do_action('ejs_new_game_added', $game_id);
 - Hệ thống thông báo là tính năng cốt lõi để duy trì mức độ gắn kết của người dùng.
 - Phối hợp chặt chẽ với các module: comment (5.2), profile (5.6), explore (5.5), events/sự kiện tương lai.
 
-// [HEADER-MODULE-5.2] HỆ THỐNG ĐÁNH GIÁ & BÌNH LUẬN GAME
+# [HEADER-MODULE-5.2] HỆ THỐNG ĐÁNH GIÁ & BÌNH LUẬN GAME
 
 ## 🎯 Mục tiêu:
 Tăng mức độ tương tác người dùng bằng cách cho phép họ đánh giá game, để lại bình luận, sử dụng hệ thống comment WordPress mở rộng, tích hợp thêm vote và @mention để gọi tên người chơi khác.
@@ -697,7 +697,7 @@ update_comment_meta($comment_id, 'game_rating', 4);
 - Kết hợp tốt với profile, wall comment, vote logic.
 - Tăng nội dung UGC (user generated content) và giúp SEO cho từng game.
 
-// [HEADER-MODULE-5.3] CHIA SẺ GAME & NHÚNG EMBED VỀ WEBSITE
+# [HEADER-MODULE-5.3] CHIA SẺ GAME & NHÚNG EMBED VỀ WEBSITE
 
 ## 🎯 Mục tiêu:
 Tăng khả năng lan truyền nội dung game bằng việc chia sẻ mạng xã hội và cho phép người dùng nhúng iframe chơi game về website của họ – tương tự như gametuoitho.vn.
@@ -771,7 +771,7 @@ Cho phép người dùng copy một đoạn mã iframe để chèn vào trang we
 - Góp phần tăng backlink, tăng SEO và traffic tự nhiên.
 - Phối hợp tốt với các module: favorite, recently played, profile, recommendation.
 
-// [HEADER-MODULE-5.4] MỤC GAME YÊU THÍCH – FAVORITE GAMES MODULE
+# [HEADER-MODULE-5.4] MỤC GAME YÊU THÍCH – FAVORITE GAMES MODULE
 
 ## 🎯 Mục tiêu:
 Cho phép người dùng đánh dấu các game yêu thích bằng nút ❤️, lưu trữ trên hồ sơ cá nhân và truy cập nhanh các game yêu thích bất cứ lúc nào. Đây là tính năng cơ bản giúp tăng độ gắn bó và cá nhân hóa trải nghiệm.
@@ -838,7 +838,7 @@ add_action('wp_ajax_ejs_toggle_favorite', 'ejs_toggle_favorite_callback');
 - Kết hợp trực tiếp với trang game (Module 5.8), profile cá nhân (Module 5.6).
 - Góp phần giữ chân người dùng và hình thành thói quen quay lại chơi.
 
-// [HEADER-MODULE-5.5] TÍNH NĂNG KHÁM PHÁ – VIDEO NGẮN KIỂU REELS/TIKTOK
+# [HEADER-MODULE-5.5] TÍNH NĂNG KHÁM PHÁ – VIDEO NGẮN KIỂU REELS/TIKTOK
 
 ## 🎯 Mục tiêu:
 Tạo một module "Khám phá" nơi người dùng có thể đăng tải video ngắn của chính mình chơi game retro, tương tác xã hội giống TikTok/Facebook Reels. Lấy cảm hứng từ https://gametuoitho.vn/kham-pha
@@ -930,7 +930,7 @@ clip_uploaded_by
 - Cho phép người chơi show skill, chia sẻ kinh nghiệm
 - Tạo nội dung UGC (User Generated Content) giúp tăng traffic tự nhiên cho web
 
-// [HEADER-MODULE-5.6] HỆ THỐNG TÀI KHOẢN NGƯỜI DÙNG & TRANG PROFILE CÁ NHÂN
+# [HEADER-MODULE-5.6] HỆ THỐNG TÀI KHOẢN NGƯỜI DÙNG & TRANG PROFILE CÁ NHÂN
 
 ## 🎯 Mục tiêu:
 Cho phép người dùng đăng ký và sử dụng tài khoản trên site để lưu tiến trình game, tạo danh sách yêu thích và sở hữu trang cá nhân hiển thị đẹp, có tương tác cộng đồng như RetroAchievements.
@@ -1010,7 +1010,7 @@ $user = get_user_by('slug', get_query_var('username'));
 - Tạo nền tảng cộng đồng vững chắc cho hệ thống chơi game trên web.
 
 
-// [HEADER-MODULE-5.7] TRANG HƯỚNG DẪN & KÊNH HỖ TRỢ NGƯỜI DÙNG
+# [HEADER-MODULE-5.7] TRANG HƯỚNG DẪN & KÊNH HỖ TRỢ NGƯỜI DÙNG
 
 ## 🎯 Mục tiêu:
 Cung cấp một trang tài liệu hướng dẫn sử dụng plugin và EmulatorJS chi tiết, trực quan, thân thiện với người mới, đồng thời tích hợp kênh hỗ trợ để người dùng có thể đặt câu hỏi, báo lỗi hoặc tìm kiếm thông tin.
@@ -1072,7 +1072,7 @@ Cung cấp một trang tài liệu hướng dẫn sử dụng plugin và Emulato
 - Giúp giảm tải khối lượng hỗ trợ thủ công từ admin, đồng thời tăng sự chuyên nghiệp cho hệ thống.
 
 
-// [HEADER-MODULE-5.8] TRANG CHƠI GAME – GIAO DIỆN CHUẨN HÓA VÀ TUỲ BIẾN CAO
+# [HEADER-MODULE-5.8] TRANG CHƠI GAME – GIAO DIỆN CHUẨN HÓA VÀ TUỲ BIẾN CAO
 
 ## 🎯 Mục tiêu:
 Xây dựng giao diện trang chơi game theo phong cách tương tự [GameTuoiTho.vn](https://gametuoitho.vn/tro-choi/super-pinball-nes), cho phép tùy biến bố cục và bổ sung các tính năng nâng cao nhằm thu hút người chơi và giữ chân lâu hơn.
@@ -1213,7 +1213,7 @@ thumbnail
 - Phải được tối ưu tốt về UX/UI, mobile-friendly và tốc độ tải.
 - Là nền tảng để gắn kết toàn bộ module khác như Save, Gợi ý, Đánh giá, Thống kê.
 
-// [HEADER-MODULE-5.9] DANH SÁCH GAME THEO HỆ MÁY – LỌC NÂNG CAO
+# [HEADER-MODULE-5.9] DANH SÁCH GAME THEO HỆ MÁY – LỌC NÂNG CAO
 
 ## 🎯 Mục tiêu:
 Tạo một trang liệt kê toàn bộ game, phân loại rõ ràng theo từng hệ máy (console/system), đi kèm hệ thống lọc nâng cao để giúp người dùng tìm kiếm hiệu quả.
@@ -1285,7 +1285,7 @@ register_taxonomy( 'game_genre', 'retro_game', [...]);
 - Kết hợp filter nâng cao + phân loại hệ máy tăng khả năng tìm đúng game yêu thích.
 - Cấu hình dễ mở rộng và liên kết chặt chẽ với hệ thống metadata game.
 
-// [HEADER-MODULE-6.0] MỤC CHƠI GẦN ĐÂY – GỢI Ý GAME & TRUY CẬP NHANH
+# [HEADER-MODULE-6.0] MỤC CHƠI GẦN ĐÂY – GỢI Ý GAME & TRUY CẬP NHANH
 
 ## 🎯 Mục tiêu:
 Xây dựng một trang riêng “Chơi Gần Đây” giúp người dùng:
@@ -1356,7 +1356,7 @@ echo ejs_render_recently_played_section();
 - Tăng thời gian giữ chân bằng cách gợi ý thông minh từ dữ liệu hành vi.
 - Kết hợp tốt với hệ thống gợi ý game để tăng lượt tương tác.
 
-// [HEADER-MODULE-6.1] MODULE GỢI Ý GAME – HIỂN THỊ LINH HOẠT & BẬT TẮT TÙY TRANG
+# [HEADER-MODULE-6.1] MODULE GỢI Ý GAME – HIỂN THỊ LINH HOẠT & BẬT TẮT TÙY TRANG
 
 ## 🎯 Mục tiêu:
 Tích hợp hệ thống gợi ý game tương tự như trang [GameTuoiTho.vn](https://gametuoitho.vn/), hiển thị danh sách game liên quan ở cuối trang hoặc dưới khu vực chơi game. Module có thể được bật/tắt linh hoạt tại các trang frontend khác theo nhu cầu.
@@ -1432,7 +1432,7 @@ echo do_shortcode('[ejs_game_suggestion]');
 - Cho phép quản trị kiểm soát nơi hiển thị gợi ý.
 - Đáp ứng trải nghiệm người dùng mượt mà như các website chơi game lớn.
 
-// [HEADER-MODULE-6.2] HỖ TRỢ CLOUD SAVE / FILE SAVE TRÊN SERVER
+# [HEADER-MODULE-6.2] HỖ TRỢ CLOUD SAVE / FILE SAVE TRÊN SERVER
 
 ## 🎯 Mục tiêu:
 Tích hợp hệ thống lưu trữ file save game (save state hoặc memory card) lên server (cloud save) thay vì bắt người dùng phải tải thủ công về máy tính. Người dùng có thể đăng nhập, chọn game đã chơi và tiếp tục từ đúng chỗ đã lưu.
@@ -1506,7 +1506,7 @@ $filename = sanitize_file_name( $game_slug . '.sav' );
 - Đảm bảo an toàn dữ liệu, quản lý dễ dàng trên server.
 - Mở rộng để sync save qua tài khoản giữa nhiều thiết bị.
 
-// [HEADER-MODULE-6.3] TỰ ĐỘNG PHÁT HIỆN QUỐC GIA VÀ CHUYỂN NGÔN NGỮ FRONTEND EMULATORJS
+# [HEADER-MODULE-6.3] TỰ ĐỘNG PHÁT HIỆN QUỐC GIA VÀ CHUYỂN NGÔN NGỮ FRONTEND EMULATORJS
 
 ## 🎯 Mục tiêu:
 Tự động phát hiện vị trí địa lý (quốc gia) của người dùng dựa vào địa chỉ IP, sau đó truyền giá trị ngôn ngữ (`EJS_language`) tương ứng xuống frontend của EmulatorJS để giao diện giả lập tự động hiển thị đúng ngôn ngữ.
@@ -1595,7 +1595,7 @@ EJS_player = new EmulatorJS({
 - Giữ giao diện EmulatorJS thân thiện và bản địa hóa.
 - Cần tối ưu cache IP để giảm call API và tăng tốc độ.
 
-// [HEADER-MODULE-6.4] HỖ TRỢ UPLOAD FILE ROM – MỞ RỘNG MIME TYPES
+# [HEADER-MODULE-6.4] HỖ TRỢ UPLOAD FILE ROM – MỞ RỘNG MIME TYPES
 
 ## 🎯 Mục tiêu:
 Cho phép quản trị viên và người dùng upload các định dạng ROM theo từng hệ máy (ví dụ: `.nes`, `.sfc`, `.gba`, `.gb`, `.n64`, `.bin`, `.iso`, `.cue`, v.v.) thông qua Media Library hoặc giao diện upload riêng, bằng cách mở rộng danh sách MIME types được WordPress hỗ trợ.
@@ -1669,7 +1669,7 @@ $system_mime_map = [
 - Việc mở rộng MIME type giúp plugin hoạt động liền mạch với hệ thống upload của WordPress.
 - Đảm bảo tương thích EmulatorJS và giữ an toàn cho server khi cho phép upload file ROM.
 
-// [HEADER-MODULE-6.5] TRANG QUẢN LÝ DANH SÁCH HỆ MÁY & THỂ LOẠI (SYSTEMS & GENRES)
+# [HEADER-MODULE-6.5] TRANG QUẢN LÝ DANH SÁCH HỆ MÁY & THỂ LOẠI (SYSTEMS & GENRES)
 
 ## 🎯 Mục tiêu:
 Cung cấp trang cấu hình trong Admin Dashboard để quản trị viên có thể:
@@ -1747,7 +1747,7 @@ Cung cấp trang cấu hình trong Admin Dashboard để quản trị viên có 
 
 Trang “Systems & Genres” sẽ là trung tâm cấu hình cho việc phân loại ROMs, hiển thị frontend, và gom nhóm thống kê. Cấu hình này mang tính nền tảng, cần trực quan và dễ mở rộng.
 
-// [HEADER-MODULE-6.6] TRANG CẤU HÌNH ADM0DE – GOOGLE ADSENSE TÍCH HỢP EMULATORJS
+# [HEADER-MODULE-6.6] TRANG CẤU HÌNH ADM0DE – GOOGLE ADSENSE TÍCH HỢP EMULATORJS
 
 ## 🎯 Mục tiêu:
 Tạo một trang cấu hình riêng trong AdminCP để quản trị viên dễ dàng nhập, lưu trữ và quản lý các tùy chọn quảng cáo (Ad settings) như: AdURL, AdTimer, AdMode, AdSize, AdBlocked. Những tùy chọn này sẽ tự động truyền xuống EmulatorJS frontend để hiển thị quảng cáo đúng chuẩn.
@@ -1816,7 +1816,7 @@ Trang `AdMode Settings` giúp quản trị viên:
 - Tích hợp trực tiếp với các option của EmulatorJS.
 - Tăng doanh thu mà vẫn giữ trải nghiệm người dùng tốt.
 
-// [HEADER-MODULE-6.7] TƯƠNG THÍCH VỚI CÁC PLUGIN PHỔ BIẾN
+# [HEADER-MODULE-6.7] TƯƠNG THÍCH VỚI CÁC PLUGIN PHỔ BIẾN
 
 ## 🎯 Mục tiêu:
 Đảm bảo plugin EmulatorJS hoạt động ổn định và không xung đột với các plugin phổ biến trong hệ sinh thái WordPress, bao gồm các plugin SEO, bảo mật và hiệu suất.
@@ -1887,7 +1887,7 @@ Plugin EmulatorJS cần:
 - Tự động nhận diện và cấu hình khi có plugin khác được cài.
 - Giữ trải nghiệm người dùng nhất quán – không lỗi vặt, không cache sai.
 
-// [HEADER-MODULE-GAME-MANAGEMENT] HỆ THỐNG QUẢN LÝ GAME TRONG PLUGIN EMULATORJS
+# [HEADER-MODULE-GAME-MANAGEMENT] HỆ THỐNG QUẢN LÝ GAME TRONG PLUGIN EMULATORJS
 
 ## 🎯 Mục tiêu:
 Xây dựng hệ thống quản trị game toàn diện trong plugin EmulatorJS – giúp admin theo dõi, thống kê, phân loại, tìm kiếm và quản lý các game được quét từ ROMs. Giao diện trực quan, lọc mạnh mẽ, phân loại chi tiết theo hệ máy, thể loại, năm phát hành và hỗ trợ mở rộng dữ liệu tự động.
@@ -1966,7 +1966,7 @@ Xây dựng hệ thống quản trị game toàn diện trong plugin EmulatorJS 
 - Hệ thống quản trị game là nền tảng quan trọng cho Plugin EmulatorJS.
 - Giao diện trực quan, thông minh, kỹ thuật mạnh, có khả năng mở rộng tương lai (với REST API hoặc block editor UI).
 
-// [HEADER-MODULE-6.9] TỰ ĐỘNG QUÉT ROMS & METADATA – CHUẨN SKRAPER
+# [HEADER-MODULE-6.9] TỰ ĐỘNG QUÉT ROMS & METADATA – CHUẨN SKRAPER
 
 ## 🎯 Mục tiêu:
 Tạo module tự động quét ROM và metadata theo cấu trúc thư mục tiêu chuẩn tương tự phần mềm Skraper của ScreenScraper.fr. Quá trình này giúp hệ thống tự động cập nhật thông tin game và hiển thị đẹp mắt ở frontend.
